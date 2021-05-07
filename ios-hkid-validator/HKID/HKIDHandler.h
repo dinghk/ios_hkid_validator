@@ -10,6 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HKIDHandler : NSObject
+typedef void (^CompletionBlock)(BOOL isValid);
+
++ (void)checkHKIDValid: (NSString *)hkid isValid:(CompletionBlock)completionBlock;
 
 @end
 

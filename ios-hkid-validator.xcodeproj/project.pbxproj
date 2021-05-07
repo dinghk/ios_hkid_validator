@@ -16,6 +16,7 @@
 		99F949CB263C02B70083A03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F949CA263C02B70083A03F /* main.m */; };
 		99F949D5263C02B70083A03F /* ios_hkid_validatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F949D4263C02B70083A03F /* ios_hkid_validatorTests.m */; };
 		99F949E0263C02B70083A03F /* ios_hkid_validatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F949DF263C02B70083A03F /* ios_hkid_validatorUITests.m */; };
+		99F949F2263C02E90083A03F /* HKIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F949F1263C02E90083A03F /* HKIDHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		99F949DB263C02B70083A03F /* ios-hkid-validatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-hkid-validatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F949DF263C02B70083A03F /* ios_hkid_validatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_hkid_validatorUITests.m; sourceTree = "<group>"; };
 		99F949E1263C02B70083A03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F949F0263C02E90083A03F /* HKIDHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKIDHandler.h; sourceTree = "<group>"; };
+		99F949F1263C02E90083A03F /* HKIDHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKIDHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		99F949B7263C02B70083A03F /* ios-hkid-validator */ = {
 			isa = PBXGroup;
 			children = (
+				99F949F6263C02ED0083A03F /* HKID */,
 				99F949B8263C02B70083A03F /* AppDelegate.h */,
 				99F949B9263C02B70083A03F /* AppDelegate.m */,
 				99F949BB263C02B70083A03F /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				99F949E1263C02B70083A03F /* Info.plist */,
 			);
 			path = "ios-hkid-validatorUITests";
+			sourceTree = "<group>";
+		};
+		99F949F6263C02ED0083A03F /* HKID */ = {
+			isa = PBXGroup;
+			children = (
+				99F949F0263C02E90083A03F /* HKIDHandler.h */,
+				99F949F1263C02E90083A03F /* HKIDHandler.m */,
+			);
+			path = HKID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 				99F949BA263C02B70083A03F /* AppDelegate.m in Sources */,
 				99F949CB263C02B70083A03F /* main.m in Sources */,
 				99F949BD263C02B70083A03F /* SceneDelegate.m in Sources */,
+				99F949F2263C02E90083A03F /* HKIDHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D2AYNQ2G3;
 				INFOPLIST_FILE = "ios-hkid-validator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D2AYNQ2G3;
 				INFOPLIST_FILE = "ios-hkid-validator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
